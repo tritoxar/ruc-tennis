@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUC Tennis – Réservation</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">🎾 RUC Tennis</div>
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="club.html">Le Club</a>
+        <a href="ecole.html">École</a>
+        <a href="evenements.html">Événements</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="reservation.html" class="btn">Réserver</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Réservation de Court</h2>
+    <p>Remplissez le formulaire ci-dessous pour réserver votre court de tennis.</p>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST" style="max-width:500px; margin: auto; display:flex; flex-direction:column; gap:15px;">
+        <input type="text" name="nom" placeholder="Nom complet" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+        <input type="email" name="email" placeholder="Email" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+        <input type="date" name="date" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+        <input type="time" name="heure" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+        <select name="terrain" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+            <option value="">Choisir le terrain</option>
+            <option value="Terre battue 1">Terre battue 1</option>
+            <option value="Terre battue 2">Terre battue 2</option>
+            <option value="Résine 1">Résine 1</option>
+            <option value="Résine 2">Résine 2</option>
+        </select>
+        <button type="submit" style="padding:12px; background:#0077ff; color:white; border:none; border-radius:6px; cursor:pointer;">Réserver</button>
+    </form>
+</section>
+
+<footer>
+    RUC Tennis © 2025
+</footer>
+
+</body>
+</html>
